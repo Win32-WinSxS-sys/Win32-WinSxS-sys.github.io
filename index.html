@@ -1,0 +1,177 @@
+<!doctype html> 
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>这是一封调查问卷</title>
+        <link rel="icon" type="image/x-icon" href="icon.ico">
+        <style>
+            body{
+                background-color:blanchedalmond;
+            }
+            #data{
+                font-size: 28px;
+                color:red;
+            }
+            .B_input{
+                width: 400px;
+                height: 50px;
+            }
+            .S_input{
+                width: 180px;
+                height: 50px;
+            }
+            #check{
+                color: black;
+                font-size: 22px;
+            }
+            #dress{
+                text-decoration:underline ;
+            }
+            a{
+                color: aqua;
+                text-decoration: none;
+                font-size: 25px;
+            }
+        </style>
+        <script>
+            function MAIN_Function(){
+                alert('提交成功！')
+                window.location.href = '提交成功.html'
+            }
+        </script>
+    </head>         
+    <body class="main">
+        <a href="https://space.bilibili.com/1833642992?spm_id_from=333.1007.0.0" target="_blank" rel="noopener noreferrer">作者主页</a>
+        <h1 style="text-align: center; font-size: 48px;">
+            以下是有关您个人的调查问卷，请谨慎填写！
+        </h1>
+        </div>
+        <div class="center">
+                <p id="data">1.您的名字?</p> 
+                <label for="un">
+                    <input type="text" name="UserName" value="" id="un" class="B_input">
+                </label>
+                <br><br><br>
+                <!-- <label for="pw"> -->
+                <!-- 密码: <input type="" name="PassWord" value="" id="pw"><br> -->
+                <p id="data">2.您是否成年?:</p> 
+                <label for="adults"> 
+                    <strong id="check">我已成年</strong> 
+                    <input type="radio" name="YearsOld" value="大于十八岁" id="adults" class="S_input">
+                <label for="minors">
+                    <strong id="check">我未成年</strong> 
+                    <input type="radio" name="YearsOld" value="低于十八岁" id="minors" class="S_input">
+                </label><br><br><br>
+                <p id="data">3.您的出生年月日?:</p> 
+                <label for="food">
+                    <input type="date" max="2070-12-31" min="1949-10-01" required class="B_input"/>
+                </label><br><br><br>
+                <p id="data">4.您喜欢吃什么?:</p> 
+                <label for="food">
+                    <input type="text" name="food" value="" id="food" class="B_input">
+                </label><br><br><br>
+                <p id="data">5.您是否将上述食品当做正餐?:</p> 
+                <label for="Y_dinner"> 
+                    <strong id="check">是</strong> 
+                    <input type="radio" name="dinner" value="Yes" id="Y_dinner" class="S_input">
+                <label for="N_dinner">
+                    <strong id="check">否</strong> 
+                    <input type="radio" name="dinner" value="No" id="N_dinner" class="S_input">
+                </label><br><br><br>
+                <p id="data">6.您喜欢喝什么?:</p> 
+                <label for="drink">
+                    <input type="text" name="drink" value="" id="drink" class="B_input">
+                </label><br><br><br>
+                <p id="data">7.您多久喝一次这个东西?:</p> 
+                <label for="day"> 
+                    <strong id="check">每天</strong> 
+                    <input type="radio" name="drinking" value="每天" id="day" class="S_input">
+                </label><br>
+                <label for="week">
+                    <strong id="check">每周</strong> 
+                    <input type="radio" name="drinking" value="每周" id="week" class="S_input">
+                </label><br>
+                <label for="month"> 
+                    <strong id="check">每月</strong> 
+                    <input type="radio" name="drinking" value="每月" id="month" class="S_input">
+                </label><br>
+                <label for="season"> 
+                    <strong id="check">每季度</strong> 
+                    <input type="radio" name="drinking" value="每季度" id="season" class="S_input">
+                </label><br>
+                <label for="Year"> 
+                    <strong id="check">每年</strong> 
+                    <input type="radio" name="drinking" value="每年" id="Year" class="S_input">
+                </label><br>
+                <label for="GT_YEAR"> 
+                    <strong id="check">大于一年</strong> 
+                    <input type="radio" name="drinking" value="每季度" id="GT_YEAR" class="S_input">
+                </label><br><br><br>
+                <p id="data">8.您为什么选择这个饮品?:</p>
+                <label for="good"> 
+                    <strong id="check">好喝</strong> 
+                    <input type="radio" name="WHY" value="好喝" id="good" class="S_input">
+                </label><br>
+                <label for="sell"> 
+                    <strong id="check">促销</strong> 
+                    <input type="radio" name="WHY" value="促销" id="sell" class="S_input">
+                </label><br>
+                <label for="UP"> 
+                    <strong id="check">UP主推荐</strong> 
+                    <input type="radio" name="WHY" value="UP主推荐" id="UP" class="S_input">
+                </label><br>
+                <label for="hot"> 
+                    <strong id="check">热梗</strong> 
+                    <input type="radio" name="WHY" value="热梗" id="hot" class="S_input">
+                </label><br>
+                <label for="other"> 
+                    <strong id="check">其他</strong> 
+                    <input type="radio" name="WHY" value="其他" id="other" class="S_input">
+                </label><br>
+                <p id="data">9.您父亲叫什么?:</p> 
+                <label for="dadN">
+                    <input type="text" name="dadN" value="" id="dadN" class="B_input">
+                </label><br><br><br>
+                <p id="data">10.您母亲叫什么?:</p> 
+                <label for="mumN">
+                    <input type="text" name="mumN" value="" id="mumN" class="B_input">
+                </label><br><br><br>
+                <p id="data">11.您多久回一次家?:</p> 
+                <label for="home">
+                    <input type="number" name="home" value="" id="home" class="B_input">
+                </label><br><br><br>
+                <p id="data">12.您身高多少?:</p> 
+                <label for="cm">
+                    <input type="number" name="cm" value="" id="cm" class="B_input">
+                </label><br><br><br>
+                <p id="data">13.您体重多少?:</p> 
+                <label for="kg">
+                    <input type="number" name="kg" value="" id="kg" class="B_input">
+                </label><br><br><br>
+                <label for="propose">
+                    <p id="data">14.请问您的建议?:</p> <br />
+                    <textarea rows="30" cols="80"></textarea><br>
+                    <input type="reset" value="重新填写">
+                </label><br><br><br>
+                <p id="data">15.您可以上传您的头像:</p> <br />
+                <input type="file" style="width: 100px; height: 66px;" value="点击上传"><br>
+                <button onclick="MAIN_Function()" style="width: 100px; height: 66px; background-color: red; "><strong style="color: white  ">提交</strong></button>
+                <!-- <label for="pypy">
+                <input type="checkbox" checked="checked" id="pypy"> 我同意<a href="隐私政策.html">隐私政策</a><br> -->
+                <!-- <label for="propose"> -->
+                <!-- 请问您的建议？（20字以内）<br /><textarea rows="3" cols="18"></textarea><br>
+                <input type="submit" value="提交"><br>
+                <input type="reset" value="重新填写">
+                <br>
+                <input type="button" value="获取短信验证码"><br>
+                上传头像：<input type="file" value="上传"> -->
+                <!-- 请问你喜欢吃什么？
+                <select>
+                    <option selected="selected">请选择</option>
+                    <option>香精煎鱼</option>                                   
+                    <option>油饼</option> -->
+                </select>
+            </form>
+        </body>
+</html>
